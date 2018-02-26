@@ -198,6 +198,16 @@ var Eth = function Eth() {
             outputFormatter: formatter.outputSyncingFormatter
         }),
         new Method({
+            name: 'getStorageProof',
+            call: 'eth_storageProof',
+            params: 3
+        }),
+        new Method({
+            name: 'getAccountProof',
+            call: 'eth_accountProof',
+            params: 2
+        }),
+        new Method({
             name: 'getGasPrice',
             call: 'eth_gasPrice',
             params: 0,
