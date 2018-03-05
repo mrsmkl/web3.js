@@ -203,9 +203,24 @@ var Eth = function Eth() {
             params: 3
         }),
         new Method({
+            name: 'getStorageCell',
+            call: 'eth_storageCell',
+            params: 3
+        }),
+        new Method({
             name: 'getAccountProof',
             call: 'eth_accountProof',
             params: 2
+        }),
+        new Method({
+            name: 'getAccountRLP',
+            call: 'eth_accountRLP',
+            params: 2
+        }),
+        new Method({
+            name: 'getBlockHeader',
+            call: 'eth_getBlockHeader',
+            params: 1
         }),
         new Method({
             name: 'getGasPrice',
